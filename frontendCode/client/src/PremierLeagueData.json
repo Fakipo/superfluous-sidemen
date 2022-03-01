@@ -1,0 +1,133 @@
+[
+    {
+        "id" : 1,
+        "teamName" : "Arsenal",
+        "points" : "90"
+    },
+
+    {
+        "id" : 2,
+        "teamName" : "Man City",
+        "points" : "83"
+    },
+
+    {
+        "id" : 3,
+        "teamName" : "Chelsea",
+        "points" : "75"
+    },
+
+    
+    {
+        "id" : 4,
+        "teamName" : "Liverpool",
+        "points" : "70"
+    },
+    
+    {
+        "id" : 5,
+        "teamName" : "Man United",
+        "points" : "69"
+    },
+    
+    {
+        "id" : 6,
+        "teamName" : "Tottenham",
+        "points" : "65"
+    },
+
+    
+    {
+        "id" : 7,
+        "teamName" : "NewCastle",
+        "points" : "64"
+    },
+
+    
+    {
+        "id" : 8,
+        "teamName" : "West Ham (massive)",
+        "points" : "61"
+    },
+
+    
+    {
+        "id" : 9,
+        "teamName" : "Leicester",
+        "points" : "58"
+    },
+
+    
+    {
+        "id" : 10,
+        "teamName" : "Everton",
+        "points" : "56"
+    },
+
+    
+    {
+        "id" : 11,
+        "teamName" : "Aston Villa",
+        "points" : "55"
+    },
+
+    
+    {
+        "id" : 12,
+        "teamName" : "Watford",
+        "points" : "55"
+    },
+
+    
+    {
+        "id" : 13,
+        "teamName" : "Crystal Palace",
+        "points" : "53"
+    },
+
+    
+    {
+        "id" : 14,
+        "teamName" : "Leeds United",
+        "points" : "50"
+    },
+
+    
+    {
+        "id" : 15,
+        "teamName" : "Brighton",
+        "points" : "47"
+    },
+
+    
+    {
+        "id" : 16,
+        "teamName" : "Burnley",
+        "points" : "45"
+    },
+
+    
+    {
+        "id" : 17,
+        "teamName" : "Brentford",
+        "points" : "42"
+    },
+
+    {
+        "id" : 18,
+        "teamName" : "Norwich",
+        "points" : "37"
+    },
+
+    {
+        "id" : 19,
+        "teamName" : "Wolves",
+        "points" : "33"
+    },
+
+        {
+        "id" : 20,
+        "teamName" : "Southampton",
+        "points" : "30"
+    }
+]
