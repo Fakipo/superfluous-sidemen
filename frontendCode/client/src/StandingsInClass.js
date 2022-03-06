@@ -1,9 +1,11 @@
 import React from 'react';
 import axios from 'axios';
 
+
+var teamNames = [];
 export default class StandingList extends React.Component {
   state = {
-    standings: []
+    teamNames1 : []
   }
 
   componentDidMount() {
@@ -17,11 +19,22 @@ export default class StandingList extends React.Component {
       }
     };
 
-    axios.request(options).then(function (responses) {
-      const standing = responses.data;
-      console.log(standing.response);
-      console.log(standing.response[0].league.country);
-      this.setState({standing});
+    axios.request(options).then(responses => {
+      const standing = responses.data.response[0].league.standings[0];
+ 
+      console.log(standing);
+
+      console.log(standing[0].team.name);
+
+      
+      for(var i = 0 ; i< 20 ;i++){
+        teamNames.push(standing[i].team.name);
+      }
+
+      this.setState({
+        teamNames1: teamNames
+      });
+      console.log("teamneames === " + teamNames)
     }).catch(function (error) {
       console.error(error);
     });
@@ -34,13 +47,15 @@ export default class StandingList extends React.Component {
   }
 
   render() {
+    const abc = teamNames.map(data => {
+      return data;
+    }
+    )
+    console.log("here teamNames = " + teamNames);    
     return (
       <ul>
-        {
-          this.state.standings
-            .map(standing =>
-              <li>{standing.response[0].country}</li>
-            )
+        {                  
+                      <li > {teamNames} </li>
         }
       </ul>
     )
