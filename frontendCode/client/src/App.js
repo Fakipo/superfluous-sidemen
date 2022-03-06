@@ -7,6 +7,7 @@ import JsonData from './PremierLeagueData.json';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import PlData from './PLDataFetch';
 import PersonList from './Persons.js';
+import StandingList from './StandingsInClass.js';
 import Axios from 'axios';
 // const abc = JsonData.map((info)=>{
 //   return(
@@ -25,21 +26,21 @@ console.log("three fpor");
 
 var axios = require("axios").default;
 
-var options = {
-  method: 'GET',
-  url: 'https://api-football-beta.p.rapidapi.com/standings',
-  params: {season: '2021', league: '39'},
-  headers: {
-    'x-rapidapi-host': 'api-football-beta.p.rapidapi.com',
-    'x-rapidapi-key': 'c587e26207mshe5ee3942027761ep140d32jsn34a6ec8354eb'
-  }
-};
+// var options = {
+//   method: 'GET',
+//   url: 'https://api-football-beta.p.rapidapi.com/standings',
+//   params: {season: '2021', league: '39'},
+//   headers: {
+//     'x-rapidapi-host': 'api-football-beta.p.rapidapi.com',
+//     'x-rapidapi-key': 'c587e26207mshe5ee3942027761ep140d32jsn34a6ec8354eb'
+//   }
+// };
 
-const abc = () => axios.request(options).then(function (response) {
-	console.log(response.data);
-}).catch(function (error) {
-	console.error(error);
-});
+// const abc = () => axios.request(options).then(function (response) {
+// 	console.log(response.data.Object.parameters);
+// }).catch(function (error) {
+// 	console.error(error);
+// });
 
 
 
@@ -77,7 +78,6 @@ render(){
       <h2>Hello this is the home page</h2>
       <p>{this.state.apiResponse}</p>
       {home()}
-      <button onClick={abc}> Click on this button for data in db</button>
       <table className = "table">
         <thead>
         <tr>
@@ -91,6 +91,7 @@ render(){
         </tbody>
       </table>
       <PersonList/>
+      <StandingList/>
     </div>
     
   );
