@@ -84,6 +84,11 @@ render(){
         <th> S. no</th>
         <th>Team Name</th>
         <th>Points </th>
+        <th>Games Played</th>
+        <th>Wins</th>
+        <th>Loses</th>
+        <th>Draws</th>
+        <th>Form</th>
         </tr>
         </thead>
         <tbody>
