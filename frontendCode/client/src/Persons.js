@@ -19,7 +19,7 @@ export default class PersonList extends React.Component {
       <ul>
         {
           this.state.persons
-            .map(person =>
+            .map((person) =>
               <li key={person.id}>{person.name}</li>
             )
         }

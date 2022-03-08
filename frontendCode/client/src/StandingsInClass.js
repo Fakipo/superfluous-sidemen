@@ -12,7 +12,7 @@ export default class StandingList extends React.Component {
     var options = {
       method: 'GET',
       url: 'https://api-football-beta.p.rapidapi.com/standings',
-      params: {season: '2019', league: '39'},
+      params: {season: '2021', league: '39'},
       headers: {
         'x-rapidapi-host': 'api-football-beta.p.rapidapi.com',
         'x-rapidapi-key': 'c587e26207mshe5ee3942027761ep140d32jsn34a6ec8354eb'
@@ -28,7 +28,7 @@ export default class StandingList extends React.Component {
 
       
       for(var i = 0 ; i< 20 ;i++){
-        teamNames.push(standing[i].team.name);
+        teamNames.push(standing[i]);
       }
 
       this.setState({
@@ -47,19 +47,17 @@ export default class StandingList extends React.Component {
   }
 
   render() {
-    const abc = teamNames.map(data => {
-      return data;
-    }
-    )
     console.log("here teamNames = " + teamNames);    
     return (
-      <ul>
-        {              
-          teamNames.map(function(item) {
-            return <li key={item}>{item}</li>;
-          })
-        }
-      </ul>
+          this.state.teamNames1.map(function(item) {
+            return (  
+            <tr>
+            <td>{item.rank}</td>
+            <td>{item.team.name}</td>
+            <td>{item.points}</td>
+            </tr>
+            )
+                  })
     )
   }
 }

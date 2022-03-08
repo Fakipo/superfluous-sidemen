@@ -87,11 +87,11 @@ render(){
         </tr>
         </thead>
         <tbody>
-          {displayData}
+        {/*{displayData}*/}
+        <StandingList/>
         </tbody>
       </table>
       <PersonList/>
-      <StandingList/>
     </div>
     
   );
