@@ -54,8 +54,10 @@ export default class StandingList extends React.Component {
     console.log("here teamNames = " + teamNames);    
     return (
       <ul>
-        {                  
-                      <li > {teamNames} </li>
+        {              
+          teamNames.map(function(item) {
+            return <li key={item}>{item}</li>;
+          })
         }
       </ul>
     )
