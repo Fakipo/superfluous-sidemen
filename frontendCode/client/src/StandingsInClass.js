@@ -49,7 +49,7 @@ export default class StandingList extends React.Component {
   render() {
     console.log("here teamNames = " + teamNames);    
     return (
-          this.state.teamNames1.map(function(item) {
+          this.state.teamNames1.map(item => {
             return (  
             <tr>
             <td>{item.rank}</td>
@@ -62,7 +62,7 @@ export default class StandingList extends React.Component {
             <td>{item.form}</td>
             </tr>
             )
-                  })
+        })
     )
   }
 }

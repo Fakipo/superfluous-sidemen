@@ -9,6 +9,7 @@ import PlData from './PLDataFetch';
 import PersonList from './Persons.js';
 import StandingList from './StandingsInClass.js';
 import Axios from 'axios';
+import CountryLeague from './InputLeagueName.js';
 // const abc = JsonData.map((info)=>{
 //   return(
 //     <tr>
@@ -77,7 +78,8 @@ render(){
     <div className="App">
       <h2>Hello this is the home page</h2>
       <p>{this.state.apiResponse}</p>
-      {home()}
+      <CountryLeague/>
+      <button className="btn btn-success">Click here to get the tables</button>
       <table className = "table">
         <thead>
         <tr>
