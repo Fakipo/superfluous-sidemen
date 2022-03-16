@@ -10,40 +10,12 @@ import PersonList from './Persons.js';
 import StandingList from './StandingsInClass.js';
 import Axios from 'axios';
 import CountryLeague from './InputLeagueName.js';
-// const abc = JsonData.map((info)=>{
-//   return(
-//     <tr>
-//     <td>{info.id}</td>
-//     <td>{info.points}</td>
-//     <td>{info.teamName}</td>
-//     </tr>
-//   );
-// })
+import PropUseAbuse from './UsingProp';
 
 console.log(PlData);
 console.log("three fpor");
 
-
-
 var axios = require("axios").default;
-
-// var options = {
-//   method: 'GET',
-//   url: 'https://api-football-beta.p.rapidapi.com/standings',
-//   params: {season: '2021', league: '39'},
-//   headers: {
-//     'x-rapidapi-host': 'api-football-beta.p.rapidapi.com',
-//     'x-rapidapi-key': 'c587e26207mshe5ee3942027761ep140d32jsn34a6ec8354eb'
-//   }
-// };
-
-// const abc = () => axios.request(options).then(function (response) {
-// 	console.log(response.data.Object.parameters);
-// }).catch(function (error) {
-// 	console.error(error);
-// });
-
-
 
 const displayData = JsonData.map((info) => {
   return(
@@ -99,6 +71,7 @@ render(){
         </tbody>
       </table>
       <PersonList/>
+      <PropUseAbuse text = "Team Name" crax = "Drag me down"/>
     </div>
     
   );
