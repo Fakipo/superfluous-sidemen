@@ -3,11 +3,9 @@ import './App.css';
 import {tableData, teamNumber} from './DefaultValues';
 import JsonData from './PremierLeagueData.json';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import PlData from './PLDataFetch';
 import StandingList from './StandingsInClass.js';
 import CountryLeague from './InputLeagueName.js';
 
-console.log(PlData);
 console.log("three fpor");
 
 const displayData = JsonData.map((info) => {

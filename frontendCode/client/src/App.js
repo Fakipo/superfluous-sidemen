@@ -5,18 +5,12 @@ import { BrowserRouter,  Routes, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import PersonList from './Persons.js';
 import PropUseAbuse from './UsingProp';
-
-
+import Navbar from './Navbar/Navbar';
+import LocateNavbar from './Navbar/LocateNavbarRoutes';
 class App extends React.Component{
 render(){
   return (
-        <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<PremierLeagueTable />}></Route>
-          <Route path="/abc" element={<PersonList />}></Route>
-          <Route path="/are" element={<PropUseAbuse text = "Team Name" crax = "Drag me down" />}></Route>
-        </Routes>
-      </BrowserRouter>
+    <LocateNavbar/>
   );
 }
 }
