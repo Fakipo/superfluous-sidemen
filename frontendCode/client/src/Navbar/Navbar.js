@@ -1,24 +1,24 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import './Navbar.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Navbar(){
-    return(  
-            <div>
-            <div>This is our football analytics website</div>
-            <nav>
-                <ul>
-                    <li>
-                        <Link to = "/PremierLeagueTable">Premier League Data</Link>
+    return(      
+            <div className="topnav"> 
+            <ul  className="list-group list-group-horizontal" style = {{listStyleType: "none"}}>
+                    <li className="list-group-item-info">  
+                        <Link to = "/PremierLeagueTable" style={{ textDecoration: 'none', color: "black" }}>Premier League Data</Link>
                     </li>
-                    <li>
-                        <Link to = "/listOfPeople"> People </Link>
+                    <li className="list-group-item-warning">
+                        <Link to = "/listOfPeople" style={{ textDecoration: 'none', color: "black" }}> People </Link>
                     </li>
-                    <li>
-                        <Link to = "/UsingProps">Prop</Link>
+                    <li className="list-group-item-danger">
+                        <Link to = "/UsingProps" style={{ textDecoration: 'none', color: "black" }}>Prop</Link>
                     </li>
-                </ul>
-            </nav>
+            </ul> 
             </div>
+            
     );
 }
 

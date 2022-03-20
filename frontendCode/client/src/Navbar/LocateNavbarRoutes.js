@@ -10,9 +10,9 @@ function locateNavbar(){
         <BrowserRouter>
         <Routes>
           <Route path="/" element={<><Navbar/></>} ></Route>
-          <Route path="/PremierLeagueTable" element={<PremierLeagueTable />}></Route>
-          <Route path="/listOfPeople" element={<PersonList />}></Route>
-          <Route path="/UsingProps" element={<PropUseAbuse text = "Team Name" crax = "Drag me down" />}></Route>
+          <Route path="/PremierLeagueTable" element={ <><Navbar/><PremierLeagueTable /></>}></Route>
+          <Route path="/listOfPeople" element={<><Navbar/><PersonList /></>}></Route>
+          <Route path="/UsingProps" element={<><Navbar/><PropUseAbuse text = "Team Name" crax = "Drag me down" /></>}></Route>
         </Routes>
         </BrowserRouter>
      </div>
